@@ -47,15 +47,19 @@
   </head>
   <body>
     <header>
-      <!-- nav barr start -->
-      <nav>
+      <!--///////// nav barr start //////////-->
+      <nav class="mb-24">
         <!-- nav-contaiiner -->
         <div class="container mx-auto bg-[#F85559] mt-5 rounded-full">
           <!-- nav-info box -->
-          <div class="flex lg:justify-center md:gap-44 lg:gap-64 items-center md:p-3 lg:p-5">
+          <div
+            class="flex lg:justify-center md:gap-44 lg:gap-64 items-center md:p-3 lg:p-5"
+          >
             <!-- nav-item -->
             <div>
-              <ul class="flex md:gap-2 lg:gap-5 justify-center items-center text-[#FFF] lg:font-medium md:text-[8px] lg:text-xl">
+              <ul
+                class="flex md:gap-2 lg:gap-5 justify-center items-center text-[#FFF] lg:font-medium md:text-[8px] lg:text-xl"
+              >
                 <li>Home</li>
                 <li>About Us</li>
                 <li>Shop</li>
@@ -64,21 +68,218 @@
             </div>
             <!-- nav-logo -->
             <div class="flex justify-center items-center lg:gap-4">
-              <img class="md:w-[25px] lg:w-[52px] md:pr-2" src="./images/logo.png" alt="" />
-              <h1 class="text-[#FFF] md:text-lg lg:text-4xl font-bold">Fruit Burst</h1>
+              <img
+                class="md:w-[25px] lg:w-[52px] md:pr-2"
+                src="./images/logo.png"
+                alt=""
+              />
+              <h1 class="text-[#FFF] md:text-lg lg:text-4xl font-bold">
+                Fruit Burst
+              </h1>
             </div>
             <!-- nav search bar -->
             <div class="flex justify-center items-center relative">
-                <input
-                  type="text"
-                  placeholder="Search here"
-                  class="input input-bordered md:w-[150px] md:h-[30px] lg:w-[300px] lg:h-[50px] md:text-[8px] lg:text-[18px] rounded-full"
-                />
-                <i class="fa-solid fa-magnifying-glass absolute md:left-32 lg:left-60"></i>
+              <input
+                type="text"
+                placeholder="Search here"
+                class="input input-bordered md:w-[150px] md:h-[30px] lg:w-[300px] lg:h-[50px] md:text-[8px] lg:text-[18px] rounded-full"
+              />
+              <i
+                class="fa-solid fa-magnifying-glass absolute md:left-32 lg:left-60"
+              ></i>
             </div>
           </div>
         </div>
       </nav>
+      <!--///////// nav barr end //////////-->
+      <!-- //////// Banner section start ///////// -->
+      <section class="container mx-auto">
+        <div class="carousel w-full">
+          <!-- Slide 1 -->
+          <div id="slide1" class="carousel-item relative w-full">
+            <!-- Banner info -->
+            <div class="w-full relative">
+              <div
+                class="hero min-h-[calc(100vh-240px)] rounded-lg bg-gradient-to-t from-[#121212] to-[#FFF]"
+                style="background-image: url(./images/banner1.png)"
+              >
+                <div class="hero-overlay bg-opacity-40"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="">
+                    <h1
+                      class="mb-5 text-3xl md:text-4xl lg:text-7xl font-extrabold text-white"
+                    >
+                      Exotic tastes at your <br />
+                      doorstep
+                    </h1>
+                    <p class="mb-5 text-sm font-bold">
+                      We supply highly quality organic products
+                    </p>
+                    <button
+                      class="btn bg-[#F85559] border-none text-white text-[12px] md:text-base rounded-lg font-extrabold"
+                    >
+                      Shop Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Slider -->
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-[250px] md:top-[250px] lg:top-[350px]"
+            >
+              <a
+                href="#slide4"
+                class="btn btn-circle bg-black text-white border-none"
+                >❮</a
+              >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-black text-white border-none"
+                >❯</a
+              >
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div id="slide2" class="carousel-item relative w-full">
+            <!-- Banner info -->
+            <div class="w-full relative">
+              <div
+                class="hero min-h-[calc(100vh-240px)] rounded-lg bg-gradient-to-t from-[#121212] to-[#FFF]"
+                style="background-image: url(./images/banner2.png)"
+              >
+                <div class="hero-overlay bg-opacity-40"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="">
+                    <h1
+                      class="mb-5 text-3xl md:text-4xl lg:text-7xl font-extrabold text-white"
+                    >
+                      Exotic tastes at your <br />
+                      doorstep
+                    </h1>
+                    <p class="mb-5 text-sm font-bold">
+                      We supply highly quality organic products
+                    </p>
+                    <button
+                      class="btn bg-[#F85559] border-none text-white text-[12px] md:text-base rounded-lg font-extrabold"
+                    >
+                      Shop Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Slider -->
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-[250px] md:top-[250px] lg:top-[350px]"
+            >
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-black text-white border-none"
+                >❮</a
+              >
+              <a
+                href="#slide3"
+                class="btn btn-circle bg-black text-white border-none"
+                >❯</a
+              >
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div id="slide3" class="carousel-item relative w-full">
+            <!-- Banner info -->
+            <div class="w-full relative">
+              <div
+                class="hero min-h-[calc(100vh-240px)] rounded-lg bg-gradient-to-t from-[#121212] to-[#FFF]"
+                style="background-image: url(./images/banner3.png)"
+              >
+                <div class="hero-overlay bg-opacity-40"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="">
+                    <h1
+                      class="mb-5 text-3xl md:text-4xl lg:text-7xl font-extrabold text-white"
+                    >
+                      Exotic tastes at your <br />
+                      doorstep
+                    </h1>
+                    <p class="mb-5 text-sm font-bold">
+                      We supply highly quality organic products
+                    </p>
+                    <button
+                      class="btn bg-[#F85559] border-none text-white text-[12px] md:text-base rounded-lg font-extrabold"
+                    >
+                      Shop Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Slider -->
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-[250px] md:top-[250px] lg:top-[350px]"
+            >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-black text-white border-none"
+                >❮</a
+              >
+              <a
+                href="#slide4"
+                class="btn btn-circle bg-black text-white border-none"
+                >❯</a
+              >
+            </div>
+          </div>
+          <!-- Slide 4 -->
+          <div id="slide4" class="carousel-item relative w-full">
+            <!-- Banner info -->
+            <div class="w-full relative">
+              <div
+                class="hero min-h-[calc(100vh-240px)] rounded-lg bg-gradient-to-t from-[#121212] to-[#FFF]"
+                style="background-image: url(./images/banner4.png)"
+              >
+                <div class="hero-overlay bg-opacity-40"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="">
+                    <h1
+                      class="mb-5 text-3xl md:text-4xl lg:text-7xl font-extrabold text-white"
+                    >
+                      Exotic tastes at your <br />
+                      doorstep
+                    </h1>
+                    <p class="mb-5 text-sm font-bold">
+                      We supply highly quality organic products
+                    </p>
+                    <button
+                      class="btn bg-[#F85559] border-none text-white text-[12px] md:text-base rounded-lg font-extrabold"
+                    >
+                      Shop Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Slider -->
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-[250px] md:top-[250px] lg:top-[350px]"
+            >
+              <a
+                href="#slide3"
+                class="btn btn-circle bg-black text-white border-none"
+                >❮</a
+              >
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-black text-white border-none"
+                >❯</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //////// Banner section end ///////// -->
     </header>
     <main></main>
     <footer></footer>
