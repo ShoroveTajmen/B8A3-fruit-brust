@@ -4,6 +4,83 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fruit Brust</title>
+    <!-- Tailwind and daisy UI link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font awesome link -->
+    <script
+      src="https://kit.fontawesome.com/7d406ebca3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind custom color linkkk  -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              "hero-bg": "url('./images//banner.png')",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .font-lato {
+        font-family: "Lato", sans-serif;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <!-- nav barr start -->
+      <nav>
+        <!-- nav-contaiiner -->
+        <div class="container mx-auto bg-[#F85559] mt-5 rounded-full">
+          <!-- nav-info box -->
+          <div class="flex lg:justify-center md:gap-44 lg:gap-64 items-center md:p-3 lg:p-5">
+            <!-- nav-item -->
+            <div>
+              <ul class="flex md:gap-2 lg:gap-5 justify-center items-center text-[#FFF] lg:font-medium md:text-[8px] lg:text-xl">
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Shop</li>
+                <li>All Fruits</li>
+              </ul>
+            </div>
+            <!-- nav-logo -->
+            <div class="flex justify-center items-center lg:gap-4">
+              <img class="md:w-[25px] lg:w-[52px] md:pr-2" src="./images/logo.png" alt="" />
+              <h1 class="text-[#FFF] md:text-lg lg:text-4xl font-bold">Fruit Burst</h1>
+            </div>
+            <!-- nav search bar -->
+            <div class="flex justify-center items-center relative">
+                <input
+                  type="text"
+                  placeholder="Search here"
+                  class="input input-bordered md:w-[150px] md:h-[30px] lg:w-[300px] lg:h-[50px] md:text-[8px] lg:text-[18px] rounded-full"
+                />
+                <i class="fa-solid fa-magnifying-glass absolute md:left-32 lg:left-60"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
 </html>
