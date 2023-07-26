@@ -50,7 +50,9 @@
       <!--///////// nav barr start //////////-->
       <nav class="mb-24">
         <!-- nav-contaiiner -->
-        <div class="container mx-auto bg-[#F85559] mt-5 rounded-full">
+        <div
+          class="md:container md:mx-auto md:bg-[#F85559] md:mt-5 md:rounded-full"
+        >
           <!-- nav-info box -->
           <div
             class="flex lg:justify-center md:gap-44 lg:gap-64 items-center md:p-3 lg:p-5"
@@ -67,9 +69,9 @@
               </ul>
             </div>
             <!-- nav-logo -->
-            <div class="flex justify-center items-center lg:gap-4">
+            <div class="md:flex md:justify-center md:items-center lg:gap-4">
               <img
-                class="md:w-[25px] lg:w-[52px] md:pr-2"
+                class="hidden md:block md:w-[25px] lg:w-[52px] md:pr-2"
                 src="./images/logo.png"
                 alt=""
               />
@@ -78,7 +80,7 @@
               </h1>
             </div>
             <!-- nav search bar -->
-            <div class="flex justify-center items-center relative">
+            <div class="hidden md:flex justify-center items-center relative">
               <input
                 type="text"
                 placeholder="Search here"
@@ -92,6 +94,42 @@
         </div>
       </nav>
       <!--///////// nav bar end //////////-->
+      <!-- ////// navbar for mobile device start here-->
+      <nav class="mb-12 md:hidden">
+        <div class="navbar bg-base-100">
+          <div class="flex-1">
+            <img src="./images/logo.png" alt="" />
+            <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a>
+          </div>
+          <div class="flex-none">
+            <div class="dropdown dropdown-end">
+              <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                <div class="w-10 rounded-full">
+                  <img src="/images/humburger.svg" />
+                </div>
+              </label>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+                <li>
+                  <input
+                    type="text"
+                    placeholder="Search"
+                    class="input input-bordered md:w-auto"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- ////// navbar for mobile device end here-->
+
       <!-- //////// Banner section start ///////// -->
       <section class="container mx-auto mb-12 md:mb-20 lg:mb-24">
         <div class="carousel w-full">
@@ -536,7 +574,7 @@
       <!-- ////// Meet the team section end ////// -->
     </main>
     <footer>
-      <section class="container mx-auto  mt-20 md:mt-2">
+      <section class="container mx-auto mt-20 md:mt-2">
         <div class="bg-black h-[525px]">
           <div class="flex justify-center items-center gap-3 md:gap-3 lg:gap-4">
             <img
