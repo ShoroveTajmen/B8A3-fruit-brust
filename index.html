@@ -46,7 +46,7 @@
     </style>
   </head>
   <body>
-    <header>
+    <header class="ml-5 mr-5 md:ml-0 md:mr-0">
       <!--///////// nav bar start //////////-->
       <nav class="mb-24">
         <!-- nav-contaiiner -->
@@ -55,12 +55,12 @@
         >
           <!-- nav-info box -->
           <div
-            class="flex lg:justify-center md:gap-44 lg:gap-64 items-center md:p-3 lg:p-5"
+            class="flex lg:justify-center md:gap-40 lg:gap-64 items-center md:p-3 lg:p-5"
           >
             <!-- nav-item -->
             <div>
               <ul
-                class="flex md:gap-2 lg:gap-5 justify-center items-center text-[#FFF] lg:font-medium md:text-[8px] lg:text-xl"
+                class="flex md:gap-3 lg:gap-5  text-[#FFF] lg:font-medium md:text-[8px] lg:text-xl"
               >
                 <li>Home</li>
                 <li>About Us</li>
@@ -96,7 +96,7 @@
       <!--///////// nav bar end //////////-->
 
       <!-- ////// navbar for mobile device start here-->
-      <nav class="mb-12 md:hidden">
+      <nav class="mb-10 md:hidden -mt-20">
         <div class="navbar bg-base-100">
           <div class="flex-1">
             <img src="./images/logo.png" alt="" />
@@ -132,7 +132,7 @@
       <!-- ////// navbar for mobile device end here-->
 
       <!-- //////// Banner section start ///////// -->
-      <section class="container mx-auto mb-12 md:mb-20 lg:mb-24 relative">
+      <section class="container mx-auto mb-12 md:mb-20 lg:mb-24 relative ">
         <div class="carousel w-full">
           <!-- Slide 1 -->
           <div id="slide1" class="carousel-item relative w-full">
@@ -151,7 +151,7 @@
                       Exotic tastes at your <br />
                       doorstep
                     </h1>
-                    <p class="mb-5 text-sm font-bold">
+                    <p class="mb-5 text-[10px] md:text-sm font-bold">
                       We supply highly quality organic products
                     </p>
                     <button
@@ -165,7 +165,7 @@
             </div>
             <!-- Slider -->
             <div
-              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-[250px] md:top-[250px] lg:top-[350px]"
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-[150px] md:top-[150px] lg:top-[350px]"
             >
               <a
                 href="#slide4"
@@ -347,7 +347,7 @@
       </section>
       <!-- //////// Banner section end ///////// -->
     </header>
-    <main>
+    <main class="ml-5 mr-5">
       <!-- ///// Deal of the day section start ///// -->
       <section class="container mx-auto md:mb-20 lg:mb-28 lg:mt-32">
         <!-- deal container -->
@@ -661,7 +661,7 @@
       <!-- ///// Deal of the day section end ///// -->
 
       <!-- ////// Meet the team section start ///////// -->
-      <section class="container mx-auto md:mb-20 lg:mb-28">
+      <section class="container mx-auto md:mb-20 lg:mb-28 mt-8">
         <div
           class="hero min-h-[calc(100vh-240px)]"
           style="background-image: url(./images/team.png)"
@@ -751,8 +751,8 @@
       </section>
       <!-- ////// Meet the team section end ////// -->
 
-      <!-- Why Choose Us section start -->
-      <section class="container mx-auto md:mb-20 lg:mb-28">
+      <!-- /////// Why Choose Us section start //////-->
+      <section class="container mx-auto md:mb-20 lg:mb-28 mt-10">
         <!-- choose us title -->
         <div class="text-center">
           <h1 class="text-5xl font-extrabold mb-5">Why Choose Us</h1>
@@ -833,7 +833,6 @@
 
           <!-- 3rd part -->
           <div class="md:mr-32 md:mt-20 lg:mr-0 lg:mt-0">
-
             <!-- 1st portion -->
             <div
               class="flex flex-col-reverse md:flex-row-reverse lg:flex-row gap-5 mt-10"
@@ -899,8 +898,9 @@
           </div>
         </div>
       </section>
+      <!-- ////// Why Choose Us section end ////// -->
     </main>
-    <footer>
+    <footer class="ml-5 mr-5">
       <section class="container mx-auto mt-20 md:mt-2">
         <div class="bg-black h-[525px]">
           <div class="flex justify-center items-center gap-3 md:gap-3 lg:gap-4">
@@ -913,18 +913,20 @@
               Fruit Burst
             </h1>
           </div>
-          <div class="w-[80%] md:w-[80%] lg:w-[50%] mx-auto pt-5">
-            <ul
-              class="text-white grid grid-cols-4 md:flex md:justify-center md:gap-10 lg:gap-20"
-            >
+
+          <div
+            class="text-white list-none w-[80%] md:w-[80%] lg:w-[50%] mx-auto pt-5"
+          >
+            <div class="flex justify-center md:gap-8 flex-wrap gap-8">
               <li>Home</li>
               <li>About Us</li>
               <li>Shop</li>
               <li>All Fruits</li>
-              <li class="pl-16 md:pl-1">Support</li>
-              <li class="pl-16 md:pl-1">My Account</li>
-            </ul>
+              <li>Support</li>
+              <li>My Account</li>
+            </div>
           </div>
+
           <!-- Social Media Link -->
           <div class="flex justify-center gap-5 pt-10">
             <img src="./images/twitter 1.svg" alt="" />
